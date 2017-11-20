@@ -129,10 +129,10 @@ int main( void ){
 		//SerialWriteBuffer(str);
 		//SerialWriteBuffer("\n");
 		_delay_ms(19);
-		HX711_Read();
-		loadcell1 = (loadcell1 + HX711_GetValue(0))>>1;
-		loadcell2 = (loadcell2 + HX711_GetValue(1))>>1;
-		loadcell3 = (loadcell3 + HX711_GetValue(2))>>1;
+		//HX711_Read();
+		//loadcell1 = 100;//(loadcell1 + HX711_GetValue(0))>>1;
+		//loadcell2 = (loadcell2 + HX711_GetValue(1))>>1;
+		//loadcell3 = (loadcell3 + HX711_GetValue(2))>>1;
 		prepareData();
 		SerialSendBuffer(txBuffer, 18);
 		_delay_ms(78);
